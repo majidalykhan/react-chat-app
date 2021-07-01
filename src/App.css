@@ -1,10 +1,5 @@
 /* CHAT STYLES */
 
-::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 * {
   font-family: "Noto Sans", sans-serif;
@@ -13,11 +8,11 @@
 }
 
 .ce-chat-list {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #fafafa !important;
 }
 
 .ce-chats-container {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #fafafa !important;
 }
 
 .ce-active-chat-card {
@@ -25,13 +20,14 @@
   margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: #f5f5f5 !important;
-  border: 2px solid #39a2db !important;
+  color: white;
+  background-color: #27729b !important;
+  border: 2px solid white !important;
   border-radius: 30px !important;
 }
 
 .ce-chat-subtitle-text {
-  color: #39a2db !important;
+  color: white !important;
 }
 
 .ce-chat-form-container {
@@ -46,7 +42,7 @@
 
 .ce-primary-button {
   border-radius: 40px !important;
-  background-color: #39a2db !important;
+  background-color: #27729b !important;
   position: relative;
   bottom: 1px;
 }
@@ -57,7 +53,7 @@
 }
 
 .ce-settings {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #fafafa !important;
 }
 
 .ce-autocomplete-input {
@@ -85,7 +81,8 @@
   height: 100%;
   width: 100%;
   overflow: scroll;
-  background-color: rgb(240, 240, 240);
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23004a7c' fill-opacity='0.13'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .chat-title-container {
@@ -95,7 +92,7 @@
 }
 
 .chat-title {
-  color: #39a2db;
+  color: #004a7c;
   font-weight: 800;
   font-size: 24px;
 }
@@ -167,9 +164,9 @@
 .message-form-container {
   position: absolute;
   bottom: 0px;
-  width: calc(100% - 36px);
+  width: calc(100% - 26px);
   padding: 18px;
-  background-color: rgb(240, 240, 240);
+  background-color: #fafafa;
 }
 
 .message-form {
@@ -197,16 +194,12 @@
 
 .send-button {
   height: 42px;
-  background-color: white;
-  border: 1px solid #39a2db;
-  padding: 0px 18px;
+  padding: 0px 15px;
   cursor: pointer;
 }
 
 .send-icon {
-  top: 1px;
   position: relative;
-  transform: rotate(-90deg);
 }
 
 .picture-icon {
@@ -221,26 +214,15 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
   font-size: 62, 5%;
 }
 
 .wrapper {
   height: 100vh;
   width: 100%;
-  background: #39a2db;
-  background: linear-gradient(
-    90deg,
-    rgba(117, 84, 160, 1) 7%,
-    rgba(117, 84, 160, 1) 17%,
-    rgba(106, 95, 168, 1) 29%,
-    rgba(99, 103, 174, 1) 44%,
-    rgba(87, 116, 184, 1) 66%,
-    rgba(70, 135, 198, 1) 83%,
-    rgba(44, 163, 219, 1) 96%,
-    rgba(22, 188, 237, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background-color: #004a7c;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.14'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,9 +251,10 @@
 .title {
   text-align: center;
   color: white;
+  font-weight: 400;
   margin-bottom: 30px;
   width: 100%;
-  font-size: 2.3em;
+  font-size: 1.5em;
 }
 
 .button {

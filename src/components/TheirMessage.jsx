@@ -13,7 +13,7 @@ const TheirMessage = ({lastMessage, message}) => {
                     ? (
                         <img src={message.attachments[0].file} alt='message-attachment' className='message-image' style={{marginLeft: isFirstMessageByUser ? '4px' : '48px'}} />
                     ) : (
-                        <div className='message' style={{float:'left',  backgroundColor:'red', marginLeft: isFirstMessageByUser ? '4px' : '48px'}}>
+                        <div className='message' style={{float:'left',  backgroundColor:'#DBE2EF', marginLeft: isFirstMessageByUser ? '4px' : '48px', borderRadius:'25px'}}>
                         {message.text}   
                     </div>
                     )
