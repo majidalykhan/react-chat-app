@@ -36,7 +36,7 @@
 
 .ce-text-input {
   border-radius: 30px !important;
-  border: 2px solid #39a2db !important;
+  border: 1px solid #39a2db !important;
   margin-bottom: 20px;
 }
 
@@ -93,13 +93,13 @@
 
 .chat-title {
   color: #004a7c;
-  font-weight: 800;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .chat-subtitle {
-  color: #39a2db;
-  font-weight: 600;
+  color: black;
+  font-weight: 400;
   font-size: 12px;
   padding-top: 4px;
 }
